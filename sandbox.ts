@@ -1,11 +1,7 @@
-const character =  'luigi';
 
- console.log(character);
+const circum = (diameter: number) =>{
+    return diameter * Math.PI;
+}
 
- const inputs = document.querySelectorAll('input');
 
- console.log(inputs);
-
- inputs.forEach(input => {
-    console.log(input);
- });
+console.log(circum(7.5));
