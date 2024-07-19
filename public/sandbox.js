@@ -1,18 +1,13 @@
 "use strict";
-var greet;
-//greet = 'hello';
-greet = function () {
-    console.log('Hello Gtm!');
+var logDetails = function (uid, item) {
+    console.log("This " + item + " has a uid " + uid);
 };
-greet();
-var add = function (a, b, c) {
-    if (c === void 0) { c = 12; }
-    console.log(a + b);
-    console.log(c);
+logDetails(34, 'Pen');
+var greet = function (user) {
+    console.log(user.name + " has uid " + user.uid + " & says hello");
 };
-add(2, 8, 'KLM');
-var minus = function (a, b) {
-    return (a - b);
+greet({ name: 'gtm', uid: 'KD12MO' });
+var greetAgain = function (user) {
+    console.log(user.name + " has uid " + user.uid + " & greet again hello");
 };
-var result = minus(10, 7);
-console.log(result);
+greetAgain({ name: 'Kuchiku', uid: '123POK' });
